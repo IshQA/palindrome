@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class checkIfPalindromeTest {
+public class CheckIfPalindromeTest {
 
     private String palindromeSentence = "A man, a plan, a canal, Panama!";
     private String notPalindrome = "This is not palindrome.";
@@ -11,28 +11,28 @@ public class checkIfPalindromeTest {
 
     @Test
     public void inputWithoutPunctuationOdd(){
-        assertTrue(checkIfPalindrome.isCharTheSame(palindromeOddNumbers));
+        assertTrue(CheckIfPalindrome.isCharTheSame(palindromeOddNumbers));
     }
 
     @Test
     public void inputWithoutPunctuationEven(){
-        assertTrue(checkIfPalindrome.isCharTheSame(palindromeEvenNumbers));
+        assertTrue(CheckIfPalindrome.isCharTheSame(palindromeEvenNumbers));
     }
 
     @Test
     public void cutPunctuation(){
         String sentence = palindromeSentence;
-        assertEquals("AMANAPLANACANALPANAMA", checkIfPalindrome.stringWithoutPunctuation(sentence));
+        assertEquals("AMANAPLANACANALPANAMA", CheckIfPalindrome.stringWithoutPunctuation(sentence));
     }
 
     @Test
     public void isPalindrome() {
-        assertTrue(checkIfPalindrome.isPalindrome(palindromeSentence));
+        assertTrue(CheckIfPalindrome.isPalindrome(palindromeSentence));
     }
 
     @Test
     public void isNotPalindrome() {
-        assertFalse(checkIfPalindrome.isPalindrome(notPalindrome));
+        assertFalse(CheckIfPalindrome.isPalindrome(notPalindrome));
     }
 
 

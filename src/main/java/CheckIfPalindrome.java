@@ -1,4 +1,4 @@
-public class checkIfPalindrome {
+public class CheckIfPalindrome {
 
     public static String stringWithoutPunctuation (String str){
         StringBuilder builder = new StringBuilder();
